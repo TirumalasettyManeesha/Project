@@ -1,0 +1,22 @@
+body{
+background:url(80110.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ 
+ background-attachment:fixed;
+}
+h1{
+color:white;
+margin-top:17%;
+position:fixed;
+margin-left:27%;
+}
+p{
+color:white;
+margin-top:23%;
+position:fixed;
+margin-left:40%;
+}
+
+

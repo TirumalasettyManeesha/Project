@@ -1,0 +1,61 @@
+<body style="background-image:url(IMG_20220908_195724.png);color:white;">
+<fieldset >
+<legend style="font-size:40px;"align="center"><b>FEEDBACK FORM</b></legend>
+<form id="form" style="font-size:25px;">
+<label >Your name:</label>
+<input type="text" id="uname" name="uname">
+<span style="color:red;" id="error"> </span><br>
+<br>
+<label>Favorite Mystery:</label>
+<input type="radio" name="fav">Machu Picchu
+<input type="radio" name="fav">Dead Sea
+<input type="radio" name="fav">Pyramid
+<br><br>
+<label >Your opinion:</label>
+<select style="font-size:20px;">
+<option value="" selected>select one</option>
+<option>Excellent</option>
+<option>Good</option>
+<option>Average</option>
+<option>Poor</option>
+</select><br><br>
+<label >Comments:</label><br>
+<textarea cols="50" rows="7"></textarea><br>
+<p ><input type="checkbox" name="check">Are you satisfied with this?</p>
+<p style="font-size:25px;"> Give Geniune Response for our Project📝️</p>
+</fieldset>
+<br>
+<br>
+<center><button style="font-size:25px;background-color:white;color:black;" type="submit">CONFIRM</button>
+<a href="data.php" style="font-size:30px;background-color:white;color:black;"<button type="reset">SUBMIT</button></a></center>
+</form>
+<script>
+ let form=document.getElementById("form");
+            form.addEventListener("submit",(event)=>{
+                event.preventDefault();
+                validate();
+            });
+            function validate(){
+                let name=document.getElementById("uname").value.trim();
+		let is_name_valid=true;
+		if(name==""){
+                    document.getElementById("error").innerText="Name can't be empty";
+                    is_name_valid=false;
+                    return;
+                }
+                if(!isNaN(name)){
+                    document.getElementById("error").innerText="Name can't contain digits";
+                    is_name_valid=false;
+                    return;
+                }
+                if(name.length<3){
+                    document.getElementById("error").innerText="Name can't be less than 3 characters";
+                    is_name_valid=false;
+                    return;
+                }
+		if(is_name_valid){
+			form.submit
+		}
+	}
+</script>
+</body>
