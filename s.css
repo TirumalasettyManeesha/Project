@@ -12,7 +12,7 @@ margin-top:17%;
 position:fixed;
 margin-left:27%;
 }
-p1{
+.p1{
 color:white;
 margin-top:23%;
 position:fixed;
@@ -22,5 +22,7 @@ margin-left:40%;
 color:white;
 text-align:right;
 }
+
+
 
 
